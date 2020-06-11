@@ -10,10 +10,9 @@ BITACORA up-to-date documentation can be also be found in: http://www.ub.edu/sof
 
 
 New version 1.2.1:
-- Implementation of GeMoMa algorithm to reconstruct new gene models (set as default). The latest version tested in our pipeline is GeMoMa v1.6.4.
-- New parameter that allows retaining novel proteins based on HMMER or BLASTP positive hits
-- Additional step to conduct a more strict filtering of the output annotations in order to obtain a confident estimation on the number of gene members for a specific gene family.
-
+- Implementation of GeMoMa as the algorithm to generate new gene models (set as default). Latest tested version: GeMoMa v1.6.4.
+- New parameter for accepting novel proteins based on HMMER or BLAST hits.
+- Additional filters in final annotations for more reliable gene family sizes.
 
 ## 0. Contents
 
@@ -35,7 +34,7 @@ New version 1.2.1:
 ## 1. Installation
 
 
-BITACORA is distributed as a multiplatform shell script (runBITACORA.sh) that calls several other Perl scripts, which include all functions responsible of performing all pipeline tasks. Hence, it does not require any installation or compilation step.
+BITACORA is distributed as a shell script (runBITACORA.sh) that calls several other Perl scripts, which include all functions responsible of performing all pipeline tasks. Hence, it does not require any installation or compilation step.
 
 To run the pipeline edit the master script runBITACORA.sh variables described in Prerequisites, Data, and Parameters.
 
@@ -287,7 +286,7 @@ $ bash runBITACORA.sh
 ## 9. Citation
 
 
-Joel Vizueta, Alejandro Sánchez-Gracia, and Julio Rozas. 2019. BITACORA: A comprehensive tool for the identification and annotation of gene families in genome assemblies. bioRxiv. https://doi.org/10.1101/593889
+Joel Vizueta, Alejandro Sánchez-Gracia, and Julio Rozas. BITACORA: A comprehensive tool for the identification and annotation of gene families in genome assemblies. Molecular Ecology Resources, 3 June 2020, https://doi.org/10.1111/1755-0998.13202
 
 Joel Vizueta, Julio Rozas, Alejandro Sánchez-Gracia; Comparative Genomics Reveals Thousands of Novel Chemosensory Genes and Massive Changes in Chemoreceptor Repertories across Chelicerates, Genome Biology and Evolution, Volume 10, Issue 5, 1 May 2018, Pages 1221–1236, https://doi.org/10.1093/gbe/evy081
 
